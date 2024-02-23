@@ -1,0 +1,10 @@
+def solution(arr, queries):
+    answer = []
+    
+    for i, j in queries:
+        for k in range(i, j+1):
+            arr[k] += 1
+    
+    answer = arr
+    
+    return answer
